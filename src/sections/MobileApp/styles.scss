@@ -1,0 +1,59 @@
+.mobileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  text-align: center;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-bottom: 2rem;
+  }
+
+  .mobileStoreContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      &:nth-child(1) {
+        width: 12rem;
+        height: 4rem;
+      }
+
+      &:nth-child(2) {
+        width: 14.7rem;
+      }
+
+      &:nth-child(3) {
+        width: 11rem;
+        height: 4rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+
+      img {
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
