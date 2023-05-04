@@ -1,0 +1,65 @@
+.devicesContainer {
+  background-color: #222326;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem;
+  color: #fff;
+
+  img {
+    width: 50rem;
+    margin-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    margin-bottom: 4rem;
+  }
+
+  .devices {
+    display: flex;
+
+    p {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &:hover {
+        color: #1ed760;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    img {
+      width: 30rem;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    .devices {
+      flex-direction: column;
+
+      p {
+        &:not(:last-child) {
+          margin-bottom: 4rem;
+        }
+
+        &:last-child {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
