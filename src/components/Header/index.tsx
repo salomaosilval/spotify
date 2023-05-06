@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./styles.scss";
 
 export const Header = () => {
@@ -11,9 +13,9 @@ export const Header = () => {
           onClick={() => window.open("https://open.spotify.com/", "_blank")}
         />
         <div className="headerLinks">
-          <a href="">Premium</a>
+          <Link to={"/premium"}>Premium</Link>
           <a href="">Suporte</a>
-          <a href="">Baixar</a>
+          <Link to={"/"}>Baixar</Link>
           <div className="separator"></div>
           <a href="">Entrar</a>
           <a href="">Inscrever-se</a>
